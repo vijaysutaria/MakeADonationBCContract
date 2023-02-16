@@ -1,9 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
-// Uncomment this line to use console.log
-// import "hardhat/console.sol";
-
+/**
+ * @title A contract to accept the donations
+ * @author Vijay Sutaria
+ * @notice 
+ */
 contract MakeADonation {
     // Event to emit when Memo is created
     event NewMemo(
@@ -58,7 +60,7 @@ contract MakeADonation {
     }
 
     /**
-     * Retrieve all memos stored in block chain
+     * @dev Retrieve all memos stored in block chain
      */
     function getMemos() public view returns (Memo[] memory) {
         return memos;
